@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>DrivenEats</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- tag para celular-->
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <!-- fonte Righteous -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet"> <!-- fonte roboto -->
+  <!--  link font-->
+</head>
+
+<body>
+  <header>
+    <div class="titulo"> DrivenEats </div>
+    <div class="sub-titulo"> Sua comida em 6 minutos </div>
+  </header>
+
+  <main> <!-- principal-->
+    <div class="titulo-pratos">Primeiro, seu prato</div>
+
+    <div class="main-pratos">
+
+
+      <div data-test="dish" class="pratos comida" onclick="toggleSelecionar(this)">
+        <img src="projeto__driven-eats__imagens/frango_yin_yang.png" />
+
+        <div class="produto-titulo">Frango Yin Yang</div>
+        <div class="produto-descricao">
+          <p> Um pouco de batata,</p>
+          <p> um pouco de salada</p>
+        </div>
+        <div data-test="item-price" class="preco">R$ 14,90</div>
+        <div class="check"></div>
+      </div> <!--div pratos-->
+
+
+      <div data-test="dish" class="macarrao comida" onclick="toggleSelecionar(this)">
+        <img src="projeto__driven-eats__imagens/frango_yin_yang.png" />
+        <div class="produto-titulo">Frango Yin Yang</div>
+        <div class="produto-descricao">
+          <p> Um pouco de batata,</p>
+          <p> um pouco de salada</p>
+        </div>
+        <div data-test="item-price" class="preco">R$ 14,90</div>
+        <div class="check"></div>
+      </div>
+
+      <div data-test="dish" class="batata comida" onclick="toggleSelecionar(this)">
+        <img src="projeto__driven-eats__imagens/frango_yin_yang.png" />
+        <div class="produto-titulo">Frango Yin Yang</div>
+        <div class="produto-descricao">
+          <p> Um pouco de batata,</p>
+          <p> um pouco de salada</p>
+        </div>
+        <div data-test="item-price" class="preco">R$ 14,90</div>
+        <div class="check"></div>
+      </div>
+    </div> <!-- final de TODOSSS os pratos-->
+
+    <div class="titulo-bebida">Agora, sua bebida</div>
+
+    <div data-test="drink" class="main-bebidas">
+
+      <div class="coca bebida" onclick="toggleSelecionar(this)">
+        <img src="projeto__driven-eats__imagens/coca-cola.png" />
+        <div class="produto-titulo">Coquinha gelada</div>
+        <div class="produto-descricao">Lata 350ml</div>
+        <div data-test="item-price" class="preco">R$ 4,90</div>
+        <div class="check"></div>
+      </div>
+
+      <div data-test="drink" class="guarana bebida" onclick="toggleSelecionar(this)">
+        <img src="projeto__driven-eats__imagens/coca-cola.png" />
+        <div class="produto-titulo">Coquinha gelada</div>
+        <div class="produto-descricao">Lata 350ml</div>
+        <div data-test="item-price" class="preco">R$ 4,90</div>
+        <div class="check"></div>
+      </div>
+
+      <div data-test="drink" class="suco bebida" onclick="toggleSelecionar(this)">
+        <img src="projeto__driven-eats__imagens/coca-cola.png" />
+        <div class="produto-titulo">Coquinha gelada</div>
+        <div class="produto-descricao">Lata 350ml</div>
+        <div data-test="item-price" class="preco">R$ 4,90</div>
+        <div class="check"></div>
+      </div>
+
+    </div>
+
+    <div class="titulo-sobremesas">Por fim, sua sobremesa</div>
+
+    <div class="main-sobremesas">
+
+      <div data-test="dessert" class="sobremesas opcoes" onclick="toggleSelecionar(this)">
+        <img src="projeto__driven-eats__imagens/pudim.png" />
+        <div class="produto-titulo">Pudim</div>
+        <div class="produto-descricao">Apenas pudim</div>
+        <div data-test="item-price" class="preco">R$ 7,90</div>
+        <div class="check"></div>
+      </div>
+
+      <div data-test="dessert" class="sobremesas opcoes" onclick="toggleSelecionar(this)">
+        <img src="projeto__driven-eats__imagens/pudim.png" />
+        <div class="produto-titulo">Pudim</div>
+        <div class="produto-descricao">Apenas pudim</div>
+        <div data-test="item-price" class="preco">R$ 7,90</div>
+        <div class="check"></div>
+      </div>
+
+      <div data-test="dessert" class="sobremesas opcoes" onclick="toggleSelecionar(this)">
+        <img src="projeto__driven-eats__imagens/pudim.png" />
+        <div class="produto-titulo">Pudim</div>
+        <div class="produto-descricao">Apenas pudim</div>
+        <div data-test="item-price" class="preco">R$ 7,90</div>
+        <div class="check"></div>
+      </div>
+
+    </div> <!--main sobremesas-->
+    <div data-test="order-btn"   class="botao-continuar" >
+      <button disabled onclick="continuar()" class="pedido" >
+        Selecione os 3 itens<br>
+        para fechar o pedido
+      </button>
+    </div> <!-- final de selecao pedido-->
+
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
